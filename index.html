@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Coffee QR Menu</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- LOADING -->
+<div id="loader">
+    <div class="spinner"></div>
+    <p>Loading menu...</p>
+</div>
+
+<!-- HERO (LOGO + HYRJA) -->
+<div class="hero">
+    <img src="images/logo.png" class="hero-logo">
+    <h1>Coffee House</h1>
+    <p>Fresh coffee & drinks – scan & enjoy</p>
+</div>
+
+<!-- NAVBAR (POSHT HERO) -->
+<nav class="navbar">
+    <a href="#kafe">Kafe</a>
+    <a href="#pije">Pije</a>
+    <a href="#lengje">Lëngje</a>
+    <a href="#uje">Ujë</a>
+</nav>
+
+<!-- KAFE -->
+<section id="kafe">
+<h2>Kafet</h2>
+
+<div class="item"><img src="images/kafe.jpg"><span>Espresso</span><span class="price">1.50€</span></div>
+<div class="item"><img src="images/kafe.jpg"><span>Macchiato</span><span class="price">1.50€</span></div>
+<div class="item"><img src="images/kafe.jpg"><span>Cappuccino</span><span class="price">1.80€</span></div>
+<div class="item"><img src="images/kafe.jpg"><span>Double Espresso</span><span class="price">2.50€</span></div>
+
+</section>
+
+<!-- PIJE -->
+<section id="pije">
+<h2>Pijet</h2>
+
+<div class="item"><img src="images/coca.jpg"><span>Coca Cola</span><span class="price">1.50€</span></div>
+<div class="item"><img src="images/fanta.jpg"><span>Fanta</span><span class="price">1.50€</span></div>
+<div class="item"><img src="images/sprite.jpg"><span>Sprite</span><span class="price">1.50€</span></div>
+
+</section>
+
+<!-- LËNGJE -->
+<section id="lengje">
+<h2>Lëngje</h2>
+
+<div class="item"><img src="images/juice.jpg"><span>Portokall</span><span class="price">1.80€</span></div>
+
+</section>
+
+<!-- UJË -->
+<section id="uje">
+<h2>Ujë</h2>
+
+<div class="item"><img src="images/water.jpg"><span>Ujë Natyral</span><span class="price">1.00€</span></div>
+
+</section>
+
+<!-- LOADER SCRIPT -->
+<script>
+window.addEventListener("load", function () {
+    const loader = document.getElementById("loader");
+
+    setTimeout(() => {
+        loader.style.opacity = "0";
+        loader.style.transition = "0.6s ease";
+
+        setTimeout(() => {
+            loader.style.display = "none";
+        }, 600);
+
+    }, 1800);
+});
+</script>
+
+</body>
+</html>
