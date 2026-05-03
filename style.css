@@ -5,12 +5,12 @@ body {
     color: #3b2f2a;
 }
 
+/* HERO */
 .hero {
     background: #efe3d3;
     padding: 10px 15px;
 }
 
-/* FLEX layout */
 .hero-content {
     display: flex;
     align-items: center;
@@ -18,15 +18,13 @@ body {
     gap: 12px;
 }
 
-/* LOGO SMALL */
 .hero-logo {
-    width: 40px;
-    height: 40px;
+    width: 45px;
+    height: 45px;
     border-radius: 50%;
     object-fit: cover;
 }
 
-/* TEXT */
 .hero-text h1 {
     font-size: 16px;
     margin: 0;
@@ -54,7 +52,7 @@ body {
     color: #6b4b3a;
 }
 
-/* SECTION */
+/* SECTIONS */
 section {
     max-width: 900px;
     margin: auto;
@@ -66,8 +64,7 @@ h2 {
     padding-left: 10px;
 }
 
-/* ===== UNIFORM CIRCLE STYLE ===== */
-
+/* GRID */
 .circle-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
@@ -75,9 +72,10 @@ h2 {
     justify-items: center;
 }
 
+/* ITEM */
 .circle-item {
-    width: 130px;
-    height: 130px;
+    width: 140px;
+    height: 140px;
     border-radius: 50%;
     background: #fffaf3;
 
@@ -87,13 +85,22 @@ h2 {
     align-items: center;
 
     text-align: center;
+
+    box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+    transition: 0.3s;
 }
 
+.circle-item:hover {
+    transform: scale(1.05);
+}
+
+/* IMAGE */
 .circle-item img {
-    width: 55px;
-    height: 55px;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
     object-fit: cover;
+    margin-bottom: 5px;
 }
 
 .circle-item h3 {
