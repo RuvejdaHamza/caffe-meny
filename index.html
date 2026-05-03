@@ -10,7 +10,7 @@
 
 <body>
 
-<!-- LOADING -->
+<!-- LOADER -->
 <div id="loader">
     <div class="spinner"></div>
     <p>Loading menu...</p>
@@ -18,7 +18,7 @@
 
 <!-- HERO -->
 <div class="hero">
-    <img src="images/logo.png" class="hero-logo">
+    <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93" class="hero-logo">
     <h1>Coffee House</h1>
     <p>Fresh coffee & drinks – scan & enjoy</p>
 </div>
@@ -38,7 +38,7 @@
 <div class="coffee-grid">
 
     <div class="coffee-circle">
-        <div class="left" style="background-image:url('images/espresso.jpg')"></div>
+        <div class="left" style="background-image:url('https://images.unsplash.com/photo-1511920170033-f8396924c348')"></div>
         <div class="right">
             <h3>Espresso</h3>
             <p>1.50€</p>
@@ -46,7 +46,7 @@
     </div>
 
     <div class="coffee-circle">
-        <div class="left" style="background-image:url('images/macchiato.jpg')"></div>
+        <div class="left" style="background-image:url('https://images.unsplash.com/photo-1509042239860-f550ce710b93')"></div>
         <div class="right">
             <h3>Macchiato</h3>
             <p>1.50€</p>
@@ -54,7 +54,7 @@
     </div>
 
     <div class="coffee-circle">
-        <div class="left" style="background-image:url('images/cappuccino.jpg')"></div>
+        <div class="left" style="background-image:url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085')"></div>
         <div class="right">
             <h3>Cappuccino</h3>
             <p>1.80€</p>
@@ -62,7 +62,7 @@
     </div>
 
     <div class="coffee-circle">
-        <div class="left" style="background-image:url('images/double.jpg')"></div>
+        <div class="left" style="background-image:url('https://images.unsplash.com/photo-1461023058943-07fcbe16d735')"></div>
         <div class="right">
             <h3>Double Espresso</h3>
             <p>2.50€</p>
@@ -76,29 +76,56 @@
 <section id="pije">
 <h2>Pijet</h2>
 
-<div class="item"><img src="images/coca.jpg"><span>Coca Cola</span><span class="price">1.50€</span></div>
-<div class="item"><img src="images/fanta.jpg"><span>Fanta</span><span class="price">1.50€</span></div>
-<div class="item"><img src="images/sprite.jpg"><span>Sprite</span><span class="price">1.50€</span></div>
+<div class="drink-grid">
 
+    <div class="drink-card">
+        <img src="https://images.unsplash.com/photo-1581006852262-e4307cf6283a">
+        <h3>Coca Cola</h3>
+        <p>1.50€</p>
+    </div>
+
+    <div class="drink-card">
+        <img src="https://images.unsplash.com/photo-1629203851122-3726ecdf080e">
+        <h3>Fanta</h3>
+        <p>1.50€</p>
+    </div>
+
+    <div class="drink-card">
+        <img src="https://images.unsplash.com/photo-1581636625402-29b2a704ef13">
+        <h3>Sprite</h3>
+        <p>1.50€</p>
+    </div>
+
+</div>
 </section>
 
 <!-- LËNGJE -->
 <section id="lengje">
 <h2>Lëngje</h2>
 
-<div class="item"><img src="images/juice.jpg"><span>Portokall</span><span class="price">1.80€</span></div>
-
+<div class="drink-grid">
+    <div class="drink-card">
+        <img src="https://images.unsplash.com/photo-1600271886742-f049cd5bbaaa">
+        <h3>Portokall</h3>
+        <p>1.80€</p>
+    </div>
+</div>
 </section>
 
 <!-- UJË -->
 <section id="uje">
 <h2>Ujë</h2>
 
-<div class="item"><img src="images/water.jpg"><span>Ujë Natyral</span><span class="price">1.00€</span></div>
-
+<div class="drink-grid">
+    <div class="drink-card">
+        <img src="https://images.unsplash.com/photo-1523362628745-0c100150b504">
+        <h3>Ujë Natyral</h3>
+        <p>1.00€</p>
+    </div>
+</div>
 </section>
 
-<!-- LOADER SCRIPT -->
+<!-- SCRIPT -->
 <script>
 window.addEventListener("load", function () {
     const loader = document.getElementById("loader");
@@ -110,8 +137,7 @@ window.addEventListener("load", function () {
         setTimeout(() => {
             loader.style.display = "none";
         }, 600);
-
-    }, 1500);
+    }, 1200);
 });
 </script>
 
